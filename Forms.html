@@ -45,6 +45,8 @@
 
 <br> <br> <br> <hr />
 
+<h1>Radio buttons</h1>
+<br><br>
 
 <form action="http://www.example.com/profile.php">
     <h3>Please select your favorite type of engine</h3>
@@ -55,9 +57,10 @@
 </form>
 
 <br> <br> <br> <hr />
-
+<br><br>
+<h1>Checkbox</h1>
 <form action="http:///example.com/profile.php">
-    <h1> Please select which mods apply most to you</h1>
+    <h3> Please select which mods apply most to you</h3>
         <br />
             <input type="checkbox" name="carparts"
                  value="downpipe" checked="checked" /> Downpipe
@@ -72,10 +75,12 @@
 
 
 <br> <br> <br> <hr />
+<h1>Drop down list box</h1>
+<br> <br>
 
 <form action="http://www.example.com/profile.php">
-    <h2>Which model are you most likely to purchase next?</h2>
-    <select name="whichcar">
+    <h3>Which model are you most likely to purchase next?</h3>
+    <select name="whichcartobuy">
         <option value="BRZ"> BRZ </option>
         <option value="WRX"> WRX </option>
         <option value="STI"> STI </option>
@@ -88,3 +93,18 @@
 </form>
 
 <br> <br> <br> <hr />
+
+<h1> Multiple Select Box</h1>
+<br><br>
+<form action="http://example.com/profile.php">
+    <h3>Which of the following cars do you own?<br> Hold CTRL if you want to select more than one option</h3>
+
+<select name="whichcardoyouown" size="8"
+         multiple="multiple">
+    <option value="Evo" selected="selected"> Evo </option>
+    <option value="Fozzy"> Fozzy </option>
+    <option value="Rex"> Rex </option>
+    <option value="STI"> STI </option>
+    <option value="Nothing"> Nothing </option>
+</select>
+</form>
