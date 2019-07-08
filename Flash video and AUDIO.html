@@ -7,22 +7,45 @@
              <Script type="text/javascript">swfobject.embedSWF("flash/bird.swf", "bird", "400",
                 "300", "8.0.0");</Script>
 </head>
-
+<!-- i dont believe this will work on newer browsers.-->
 <body>
     <div id="bird"> <p> An animation of a bird taking a shower</p></div>
 </body>
-
+<!---->
 
 <br> <br> <br> <hr /><br> <br> <br>
 
 <head><title> HTML5 video</title></head>
     <video src="videos/JetCrashes.mp4"
-        poster="none"
+        poster="images/jetcrash_warehouse.jpg"
         width="400"
         height="224"
-        preload
+        preload="auto"
         controls
-        loop></video>
+        loop>
+    <p> Jet crashing.</p>
+    </video>
+
+
+<br> <br> <br> <hr /><br> <br> <br>
+
+<h1>Multiple video sources</h1>
+
+<video poster="images/jetcrash_warehouse.jpg" width="400" height="224"
+        preload="auto" controls loop>
+
+        <source src="videos/JetCrashes.mp4" type="" width="400" height="224">
+    
+        <source src="other videos formats here">
+
+            <p>providing Multiple video formats.</p>
+    </video>
+
+
+<br> <br> <br> <hr /><br> <br> <br>
+
+<h1 id="html5audio"> Adding HTLM5 audio to your pages</h1>
+
 
 
 
